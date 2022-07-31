@@ -91,6 +91,8 @@ code(argcount, posonlyargcount, kwonlyargcount, nlocals, stacksize,
 
 Create a code object.  Not for the faint of heart.
 ```
+Another way to find the argument order is to check the python repository and find references like this [test](https://github.com/python/cpython/blob/3f2dd0a7c0b1a5112f2164dce78fcfaa0c4b39c7/Lib/test/test_code.py#L223).
+
 The data needed can be found using `controller.buy_flag.__code__.co_ARGNAME`, where ARGNAME is the name of the argument. Exception is `codestring`, that one being `co_code`
 
 After creating the CodeType, you can to create a function from it using `FunctionType(code_object, globals)`
