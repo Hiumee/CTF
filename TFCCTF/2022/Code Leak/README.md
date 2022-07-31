@@ -100,4 +100,4 @@ And finally run the function with the controller created earlier as parameter (a
 ## Notes
 If the code doesn't work as expected locally (eg. gives the same string with any amount of money) use the same python version as the challenge. The Dockerfile is included as a hint to use Python 3.10 (or what is the latest version if run in the future)
 
-A cleaner solution I saw involved creating the controller object using the `__init__` method, aquired the same way as `buy_flag`
+I saw a more elegant solution by [Tzlils](https://github.com/tzlils) ([Solution](https://gist.github.com/tzlils/5779d03919d6873debd1e20baba6c84b)) that recreated the Controller class, skipping the assumption that the constructor is trivial.
