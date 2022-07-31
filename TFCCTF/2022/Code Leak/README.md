@@ -75,7 +75,7 @@ class Controller:
   self.name = "ok"
   self.money = 9999
   self.works = 1
-  self.encrypted_flag = 'ENCRYPTED_FLAG_HERE
+  self.encrypted_flag = 'ENCRYPTED_FLAG_HERE'
 
 controller = Controller()
 ```
